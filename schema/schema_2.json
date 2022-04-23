@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "anyOf": [
+    {
+      "properties": {},
+      "type": "string"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "user": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "nickname": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "accountType": {
+              "type": "string"
+            },
+            "countryCode": {
+              "type": "string"
+            },
+            "orientation": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "accountType",
+            "countryCode",
+            "id",
+            "nickname",
+            "orientation",
+            "title"
+          ]
+        },
+        "time": {
+          "type": "integer"
+        },
+        "acl": {
+          "type": "array"
+        },
+        "publicFeed": {
+          "type": "boolean"
+        },
+        "internationalCountries": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tag": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}
